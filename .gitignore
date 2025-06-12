@@ -2,18 +2,62 @@
 __pycache__/
 *.py[cod]
 *$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.pkl
+*.joblib
+*.h5
+*.pt
+*.onnx
+*.log
+*.sqlite3
+*.db
+*.env
+.env
+venv/
+ENV/
+.envrc
 
 # Jupyter Notebook
-.ipynb_checkpoints
+.ipynb_checkpoints/
+*.ipynb_checkpoints
 
-# Virtual Environment
-venv/
-env/
-
-# IDE
+# VSCode
 .vscode/
-.idea/
 
-# OS specific
+# Android Studio
+*.iml
+.gradle/
+build/
+.idea/
+local.properties
+*.keystore
+*.jks
+*.apk
+*.ap_*
+*.cxx/
+*.log
+captures/
+output.json
+
+# OS
 .DS_Store
-Thumbs.db 
+Thumbs.db
+
+# Model ağırlıkları ve geçici dosyalar
+runs/
+*.weights
+*.tflite
+*.onnx
+*.ckpt
+
+# Diğer
+*.swp
+*.swo
+
+# Kişisel ayarlar
+*.bak
+*.tmp
