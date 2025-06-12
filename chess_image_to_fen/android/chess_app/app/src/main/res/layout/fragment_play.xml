@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="#f5f5f5">
+
+    <!-- Oyun Durumu Göstergesi -->
+    <TextView
+        android:id="@+id/tvGameStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Satranç Oyunu"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Sıra Göstergesi -->
+    <TextView
+        android:id="@+id/tvCurrentPlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sıra: Beyaz"
+        android:textSize="18sp"
+        android:textColor="#666666"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Satranç Tahtası -->
+    <GridLayout
+        android:id="@+id/chessBoard"
+        android:layout_width="320dp"
+        android:layout_height="320dp"
+        android:columnCount="8"
+        android:rowCount="8"
+        android:layout_marginBottom="30dp"
+        android:background="#8B4513"
+        android:padding="4dp">
+
+        <!-- 64 kare buraya dinamik olarak eklenecek -->
+
+    </GridLayout>
+
+    <!-- Oyun Kontrol Butonları -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnStartGame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Oyunu Başlat"
+            android:textSize="16sp"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="10dp"
+            android:minWidth="120dp" />
+
+        <Button
+            android:id="@+id/btnResetGame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yeniden Başlat"
+            android:textSize="16sp"
+            android:backgroundTint="#FF5722"
+            android:textColor="#FFFFFF"
+            android:minWidth="120dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
